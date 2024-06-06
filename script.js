@@ -4,13 +4,13 @@ const menuIcon = document.querySelector(".menuIcon");
 
 menuIcon.addEventListener("click", ()=>{
     // nav.style.transform = "translateX(-10rem);"
-    nav.setAttribute('style', 'margin: 0 0%; ');
+    nav.setAttribute('style', 'margin: 0 0%; visibility: visible; ');
    
 });
 
 closeIcon.addEventListener("click", ()=>{
     // nav.style.transform = "translateX(-10rem);"
-    nav.setAttribute('style', 'margin: 0 100%; ');
+    nav.setAttribute('style', 'margin: 0 100%; visibility: hidden; ');
 });
 
 
