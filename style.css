@@ -1,0 +1,117 @@
+*{
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+    font-size: 18px;
+    letter-spacing: 0.03rem;
+}
+html{
+    width: 376px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.menuIcon{
+    width: 2rem;
+    height: 1rem;
+}
+article, header, footer{
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    z-index: 1;
+
+    width: 376px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+}
+.ImgMovil{width: 100%;}
+h1{
+    margin: 2rem auto 0rem auto;
+    font-size: 2.1rem;
+    font-weight: 1000;
+}
+h3{
+    text-align: center;
+    margin: 0rem auto .5rem auto;
+    padding: 1rem .7rem;
+    color: hsl(0, 0%, 41%);
+}
+.learMore{
+    width: max-content;
+    margin: auto;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    font-size: .95rem;
+    font-weight: 600;
+    padding: .7rem 1rem .7rem 1.5rem;
+    border: none;
+    border-radius: .7rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem .75rem 3rem .75rem;
+}
+.databiz{
+    width: 4.5rem;
+    height: .8rem;
+}
+.audiophile{
+    width: 3rem;
+    height: 1.5rem;
+    position: relative;
+    transform: translatey(-.2rem);
+}
+.meet{
+    width: 3.5rem;
+    height: .8rem;
+}
+.maker{
+    width: 3.5rem;
+    height: .9rem;
+}
+
+/************************************** Nav styles*********************************/
+.nav{
+   visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: solid black 2px;
+    right: 0;
+    top: 0;
+    display: flex;
+    z-index: 10;
+}
+.sec1{
+    background-color: hsl(0, 0%, 8%);
+    width: 38.5vw;
+    height: 100%;
+    opacity: 0.75;
+}
+.sec2{
+    background-olor: hsl(0, 0%, 98%);
+    width:100%;
+    /* max-width: 12rem; */
+    height: 100%;
+    border: solid black 2px;
+}
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); font-size: 11px; }
+
+
+/* header{border: solid 1px sandybrown;}
+article{border: solid 1px darkblue;}
+footer{border: solid 1px yellowgreen;} */
