@@ -86,10 +86,11 @@ h3{
     margin: 0 100%;
     left: 0;
     right: 0;
+    top: 0;
     display: flex;
     z-index: 10;
 
-    transition: margin 1.5s, visibility .5s;
+    transition: margin .75s;
 }
 .sec1{
     background-color: hsl(0, 0%, 8%);
