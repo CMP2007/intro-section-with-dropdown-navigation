@@ -32,7 +32,7 @@ closeIcon.addEventListener("click", ()=>{
 });
 
 
-function deleteNone() {
+function deleteNone() { //detect screen and relocate menu
     const windowOb = window;
     const windowValue = windowOb.innerWidth;
   
