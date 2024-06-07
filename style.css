@@ -6,9 +6,6 @@
     font-size: 18px;
     letter-spacing: 0.03rem;
 }
-/* html{
-    width: 376px;
-} */
 header{
     display: flex;
     justify-content: space-between;
@@ -23,14 +20,14 @@ article, header, footer{
     box-sizing: border-box;
     margin: auto;
     z-index: 1;
-
-    width: 370px;
+    min-width: 375px;
+    
 }
-article{
+article, .sec3{
     display: flex;
     flex-direction: column;
 }
-.ImgMovil{width: 100%;}
+.Img{width: 100%; content: url("./images/image-hero-mobile.png");}
 h1{
     margin: 2rem auto 0rem auto;
     font-size: 2.1rem;
@@ -39,7 +36,8 @@ h1{
 h3{
     text-align: center;
     margin: 0rem auto .5rem auto;
-    padding: 1rem .7rem;
+    padding: 1rem .5rem;
+    width: 21rem;
     color: hsl(0, 0%, 41%);
 }
 .learMore{
@@ -76,21 +74,22 @@ h3{
     width: 3.5rem;
     height: .9rem;
 }
-
 /************************************** Nav styles*********************************/
 .nav{
-    visibility: hidden; 
     position: absolute;
-    width: 21.5rem;
+    max-width: 100%;
+    min-width: 390px;
     height: 100%;
-    margin: 0 100%;
+    margin: 0 110%;
     left: 0;
     right: 0;
     top: 0;
     display: flex;
     z-index: 10;
-
-    transition: margin .75s, visibility .75s;
+    transition: margin .75s;
+}
+.none{
+    display: none;
 }
 .sec1{
     background-color: hsl(0, 0%, 8%);
@@ -101,9 +100,7 @@ h3{
 .sec2{
     background-color: hsl(0, 0%, 98%);
     width:18.2rem;
-    /* max-width: 12rem; */
     height: 100%;
-    /* border: solid black 2px; */
     display: flex;
     flex-direction: column;
     padding: 1.2rem;
@@ -118,6 +115,9 @@ details, .options{
 }
 summary{
     list-style: none;
+}
+.arrow{
+    margin-left: .75rem;
 }
 ul{
     margin: 0;
@@ -139,6 +139,7 @@ li{
     color: hsl(0, 0%, 41%);
 }
 .login{
+    margin-top: 3rem;
     border: none;
 }
 .register{
@@ -146,14 +147,7 @@ li{
     padding: .5rem;
     border: hsl(0, 0%, 41%) solid 0.15rem;
 }
-
-/* .menuIcon:hover + .nav{
-    transform: translateX(-10rem);
-}
-.close:hover + .nav{
-    transform: translateX(15rem);
-} */
-
+ 
 
 
 .attribution { font-size: 11px; text-align: center; }
@@ -162,4 +156,152 @@ li{
 
 /* header{border: solid 1px sandybrown;}
 article{border: solid 1px darkblue;}
-footer{border: solid 1px yellowgreen;} */
+.footer{border: solid 1px yellowgreen;}
+ */
+@media  (min-width: 590px) and (max-width: 929px) {
+    .Img{
+        width: 75%;
+        margin: auto;
+    }
+    h1{
+        margin: 3rem auto 0rem auto;
+        font-size: 2.5rem;
+    }
+    h3{
+        margin: 0rem auto 1.5rem auto;
+        width: 22rem;
+    }
+    .footer{
+        padding: 4.5rem .75rem 3rem .75rem;
+        width: 25rem;
+        margin: auto;
+    }
+    .sec1{
+        
+        width: 60vw;
+    }
+}
+
+
+
+@media (min-width: 930px) and (max-width: 1099px) {
+    article{
+        flex-direction: row-reverse;
+        margin-top: 2rem;
+        justify-content: space-between;
+    }
+    .sec3{
+        width: 35%;
+        padding: 6.25% 6.25% 1.25% 5%;
+        margin: 0 2.5% 0 0;
+    }
+    .Img{
+        content: url("./images/image-hero-desktop.png");
+        width: 3vw;
+        height: 20%;
+        min-width: 25rem;
+        margin-right: 1.5rem;
+    }
+    h1{
+        font-size: 3.75rem;
+        font-weight: 900;
+        width: 22.5rem;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    h3{
+        text-align: left;
+        margin: 2.5rem  0 0 0;
+        width: 22rem;
+        padding: 0;
+        color: hsl(0, 0%, 41%);
+    }
+    .learMore{
+        margin:  3rem 0;
+    }
+    .footer{
+        width: 20rem;
+        padding: 2.5rem .75rem 3rem .75rem;
+    }
+    .databiz{
+        width: 5rem;
+        height: .95rem;
+    }
+    .audiophile{
+        width: 3.4rem;
+        height: 1.75rem;
+        position: relative;
+        transform: translatey(-.2rem);
+    }
+    .meet{
+        width: 3.9rem;
+        height: .95rem;
+    }
+    .maker{
+        width: 4.1rem;
+        height: 1.1rem;
+    }
+}
+
+
+
+@media (min-width: 1100px) {
+    article{
+        flex-direction: row-reverse;
+        margin-top: 2rem;
+    }
+    .sec3{
+        width: 40%;
+        padding: 6.25% 6.25% 1.25% 10%;
+        margin: 0 2.5% 0 0;
+    }
+    .Img{
+        content: url("./images/image-hero-desktop.png");
+        width: 36vw;
+        height: 20%;
+        min-width: 25rem;
+        margin-right: 5.5rem;
+    }
+    h1{
+        /* margin: 5rem auto 0rem auto; */
+        font-size: 4.75rem;
+        font-weight: 900;
+        width: 28rem;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    h3{
+        text-align: left;
+        margin: 2.5rem  0 0 0;
+        width: 26rem;
+        padding: 0;
+        color: hsl(0, 0%, 41%);
+    }
+    .learMore{
+        margin:  3rem 0;
+    }
+    .footer{
+        width: 25rem;
+        padding: 2.5rem .75rem 3rem .75rem;
+    }
+    .databiz{
+        width: 5rem;
+        height: .95rem;
+    }
+    .audiophile{
+        width: 3.4rem;
+        height: 1.75rem;
+        position: relative;
+        transform: translatey(-.2rem);
+    }
+    .meet{
+        width: 3.9rem;
+        height: .95rem;
+    }
+    .maker{
+        width: 4.1rem;
+        height: 1.1rem;
+    }
+}
