@@ -32,4 +32,16 @@ closeIcon.addEventListener("click", ()=>{
 });
 
 
-const img = document.querySelector(".img");
+function deleteNone() {
+    const windowOb = window;
+    const windowValue = windowOb.innerWidth;
+  
+    if (windowValue > 930) {
+      nav.classList.remove('none');
+      nav.setAttribute('style', 'margin: 0 0%;');
+    } else {
+      nav.classList.add('none');
+    }
+  }
+  window.addEventListener('resize',deleteNone);
+  deleteNone();
