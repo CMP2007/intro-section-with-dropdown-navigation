@@ -1,76 +1,39 @@
-# Frontend Mentor - Intro section with dropdown navigation solution
+# Intro Section with Dropdown Navigation: Responsive Architecture
 
-This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). 
+This project is a **historical practice** focused on mastering responsive navigation systems. It demonstrates the ability to implement a "Mobile-First" navigation that transforms from a slide-out sidebar (off-canvas) to a complex desktop header with interactive dropdown menus.
 
-## Table of contents
+---
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
+## 🚀 Demo
+[SEE DEMO HERE](https://cmp2007.github.io/intro-section-with-dropdown-navigation/)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
-- View the optimal layout for the content depending on their device's screen size
-- See hover states for all interactive elements on the page
+### 🏆 Challenge Context
+This project was developed as a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/introsectionwithdropdownnavigation-tfWSxCjeU4).
 
 ### Screenshot
 
 ![](./images/screenshot_1.jpg)
 ![](./images/screenshot_2.jpg)
 
+---
 
-### Links
+## 📋 Evolution & Context Note
+> ⚠️ **Note on my trajectory:** This repository reflects my exploration of responsive logic beyond simple Media Queries. By using the `window.onresize` event and manual DOM manipulation, I learned to synchronize layout states between mobile and desktop environments before adopting modern declarative frameworks.
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/introsectionwithdropdownnavigation-tfWSxCjeU4)
-- Live Site URL: [Add live site URL here](https://cmp2007.github.io/intro-section-with-dropdown-navigation/)
+## 📋 Technical Milestones of this Stage
+In this specific phase of my training, I successfully achieved:
 
-## My process
+* **Hybrid Navigation System:** Implementation of an "Off-Canvas" mobile menu and a persistent desktop header, managed through a custom `deleteNone()` function that monitors screen width in real-time.
+* **Synchronized State Transitions:** Use of `setTimeout` in JavaScript to coordinate CSS transitions with `display: none` logic, ensuring smooth slide-in and slide-out animations for the mobile overlay.
 
-### Built with
+* **Interactive Disclosure Components:** Utilization of the semantic `<details>` and `<summary>` HTML tags, enhanced with custom JavaScript to toggle arrow iconography based on the `open` attribute state.
+* **Advanced Responsive Imagery:** Dynamic swapping of hero images (`mobile` vs `desktop`) using CSS `content` properties and Media Queries to optimize visual impact across devices.
+* **Overlay Layering (Z-Index):** Management of complex visual hierarchies, including a semi-transparent background overlay (`.sec1`) that dims the main content when the mobile menu is active.
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
+## 🛠️ Technologies (at the time)
+* **HTML5:** Semantic navigation, `<details>` components, and custom SVG icons.
+* **CSS3:** Flexbox layout, absolute positioning, and synchronized transitions.
+* **Vanilla JavaScript:** Event listeners (Resize/Click), DOM attribute manipulation, and timing functions.
 
-### What I learned
-
-This is the first time that I use the "resize" event, I consider it to be a good lesson, as well as the first time that I establish a conditional with the measurements of the screen, for this reason, the elements that I learned to use in this practice seem particularly useful to me.
-
-```js
-function deleteNone() { //detect screen and relocate menu
-    const windowOb = window;
-    const windowValue = windowOb.innerWidth;
-  
-    if (windowValue > 930) {
-      nav.classList.remove('none');
-      nav.setAttribute('style', 'margin: 0 0%;');
-    } else {
-      nav.classList.add('none');
-    }
-  }
-
-window.addEventListener('resize',deleteNone);
-```
-
-### Continued development
-
-At this moment I want to continue doing challenges and practices based on HTML, CSS and JS to develop a good foundation before continuing with my learning path.
-
-
-## Author
-
-- Frontend Mentor - [CMP2007](https://www.frontendmentor.io/profile/CMP2007)
+---
+**Coded by [Carlos Miguel Puche](https://github.com/CMP2007)**
