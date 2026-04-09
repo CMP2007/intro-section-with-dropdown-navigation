@@ -1,5 +1,8 @@
 # Intro Section with Dropdown Navigation: Responsive Architecture
 
+> [!Note]
+>> This repository contains a legacy project from my early days as a programmer
+
 This project is a **historical practice** focused on mastering responsive navigation systems. It demonstrates the ability to implement a "Mobile-First" navigation that transforms from a slide-out sidebar (off-canvas) to a complex desktop header with interactive dropdown menus.
 
 ---
